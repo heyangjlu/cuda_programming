@@ -1,0 +1,6 @@
+Performance tuning on NVIDIA GPUs requires optimizing all these architectural features:
+
+Finding and exposing enough parallelism to populate all the multiprocessors.
+Finding and exposing enough additional parallelism to allow multithreading to keep the cores busy.
+Optimizing device memory accesses for contiguous data, essentially optimizing for stride-1 memory accesses.
+Utilizing the software data cache to store intermediate results or to reorganize data that would otherwise require non-stride-1 device memory accesses.
